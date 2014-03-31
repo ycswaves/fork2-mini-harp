@@ -1,0 +1,17 @@
+{
+  "name": "mini-harp",
+  "version": "0.0.0",
+  "description": "mini-harp project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "ycswaves",
+  "license": "MIT",
+  "bin": {
+    "mini-harp": "./bin/mini-harp.js"
+  },
+  "dependencies": {
+    "connect": "^3.0.0-rc.1"
+  }
+}
