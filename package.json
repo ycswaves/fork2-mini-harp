@@ -12,6 +12,7 @@
     "mini-harp": "./bin/mini-harp.js"
   },
   "dependencies": {
-    "connect": "^3.0.0-rc.1"
+    "connect": "^3.0.0-rc.1",
+    "minimist": "0.0.8"
   }
 }
