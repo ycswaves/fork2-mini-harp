@@ -16,6 +16,10 @@ module.exports = function(path){
       request.url = request.url+'index.html';
       next();
     }
+    else if(url[1].match(/jade|less$/)){
+      response.statusCode = 404;
+      next();
+    }
     else {
       next();
     }
