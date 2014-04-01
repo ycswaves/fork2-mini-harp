@@ -1,5 +1,6 @@
 var connect = require('connect')
-  , serveStatic = require('serve-static');
+  , serveStatic = require('serve-static')
+  , serveJade = require('./lib/processor/jade.js');
 
 module.exports = function(path){
   var app = connect();
@@ -12,7 +13,8 @@ module.exports = function(path){
     } else {
       next();
     }
-  }).use(serveStatic(path));
+  }).use(serveStatic(path))
+    .use(serveJade(path));
 
   return app;
 }
